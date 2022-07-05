@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:background="@drawable/backgroundmain"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_one"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/con_two"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="2.5">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/one_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:rippleColor="@color/silver_darker2"
+            app:layout_constraintEnd_toStartOf="@+id/one_two"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/time"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/one"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/one"
+                    app:layout_constraintTop_toTopOf="@+id/one"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/one"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_one"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/one_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/one_three"
+            app:layout_constraintStart_toEndOf="@+id/one_one"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/wei"
+                    android:padding="15dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/two"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/two"
+                    app:layout_constraintTop_toTopOf="@+id/two"
+                    tools:ignore="SmallSp" />
+
+
+                <View
+                    android:id="@+id/two"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_two"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/one_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/one_two"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/vol"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/three"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/volume"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/three"
+                    app:layout_constraintTop_toTopOf="@+id/three"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/three"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_three"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_two"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/con_three"
+        app:layout_constraintTop_toBottomOf="@+id/con_one"
+        app:layout_constraintVertical_weight="2.5">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/two_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/two_two"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/are"
+                    android:padding="20dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/four"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/area"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/four"
+                    app:layout_constraintTop_toTopOf="@+id/four"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/four"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_four"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/two_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/two_three"
+            app:layout_constraintStart_toEndOf="@+id/two_one"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/t"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/five"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/five"
+                    app:layout_constraintTop_toTopOf="@+id/five"
+                    tools:ignore="SmallSp" />
+
+
+                <View
+                    android:id="@+id/five"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_five"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/two_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/two_two"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/le"
+                    android:padding="25dp"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/six"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/length"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/six"
+                    app:layout_constraintTop_toTopOf="@+id/six"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/six"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_six"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_three"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/con_four"
+        app:layout_constraintTop_toBottomOf="@+id/con_two"
+        app:layout_constraintVertical_weight="2.5">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/three_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/three_two"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/energ"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/seven"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/energy"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/seven"
+                    app:layout_constraintTop_toTopOf="@+id/seven"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_seven"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/three_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/three_three"
+            app:layout_constraintStart_toEndOf="@+id/three_one"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cur"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/eight"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/currency"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/eight"
+                    app:layout_constraintTop_toTopOf="@+id/eight"
+                    tools:ignore="SmallSp" />
+
+
+                <View
+                    android:id="@+id/eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_eight"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/three_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/three_two"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/speed"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/nine"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/speed"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/nine"
+                    app:layout_constraintTop_toTopOf="@+id/nine"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_nine"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con_four"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_three"
+        app:layout_constraintVertical_weight="2.5">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/four_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/four_two"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/engin"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/ten"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/torque"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/ten"
+                    app:layout_constraintTop_toTopOf="@+id/ten"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_ten"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/four_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toStartOf="@+id/four_three"
+            app:layout_constraintStart_toEndOf="@+id/four_one"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_ele"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/binary"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/ele"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/ele"
+                    app:layout_constraintTop_toTopOf="@+id/ele"
+                    tools:ignore="SmallSp" />
+
+
+                <View
+                    android:id="@+id/ele"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_ele"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/four_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/silver"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="2dp"
+            android:foreground="@color/silver_darker"
+            android:clickable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/four_two"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_twe"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/an"
+                    android:padding="25dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo"
+                    app:layout_constraintBottom_toTopOf="@+id/twe"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_weight="7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/angle"
+                    android:textColor="@color/white"
+                    android:elevation="10dp"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/twe"
+                    app:layout_constraintTop_toTopOf="@+id/twe"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:id="@+id/twe"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/silver_darker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_twe"
+                    app:layout_constraintVertical_weight="3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

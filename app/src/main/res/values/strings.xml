@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">UnitConverterThirdDesignTask</string>
+
+    <string name="todo">TODO</string>
+    <string name="first_test">First Test</string>
+
+    <string name="time">Time</string>
+    <string name="weight">Weight</string>
+    <string name="volume">Volume</string>
+    <string name="area">Area</string>
+    <string name="temperature">Temperature</string>
+    <string name="length">Length</string>
+    <string name="energy">Energy</string>
+    <string name="currency">Currency</string>
+    <string name="speed">Speed</string>
+    <string name="torque">Torque</string>
+    <string name="data">Data</string>
+    <string name="angle">Angle</string>
+
+    <string name="title">Title</string>
+
+    <string name="converter">Converter</string>
+    <string name="nothing_now">Nothing Now</string>
+    <string name="convert">Convert</string>
+
+    <array name="first">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Five</item>
+        <item>Six</item>
+        <item>Franhlises</item>
+    </array>
+
+</resources>
